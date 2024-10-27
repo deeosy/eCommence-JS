@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .head{
+      height: 200px;
+      width: 80vw;
+      margin: auto;
+      background-color: aqua;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  
+  <button popovertarget="my-popover">
+    login
+  </button>
+  <div class="head" id="my-popover" popover>
+    <label for="userName">User Name</label> <br>
+    <input type="text" id="userName">
+  </div>
+
+
+
+
+
+  <button popovertarget="signUp">
+    sign up
+  </button>
+  <div id="signUp" popover class="head">
+    <p>
+      sign up here
+    </p>
+    <input type="text" name="" id="" placeholder="username">
+    <input type="text" placeholder="password">
+    <p>Forgot password? <a href="#">click here</a></p>
+  </div>
+  <script src="./assigment-03-10.js"></script>
+</body>
+</html>

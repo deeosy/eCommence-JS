@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+
+  <script>
+  let workers = [
+    {"name": "Jennie Wisoky", "email": "Juvenal89@yahoo.com"},
+    {"name": "Annabelle Walker Sr.", "email": "Parker81@gmail.com"},
+    {"name": "Kade Daugherty", "email": "Juvenal58@yahoo.com"},
+    {"name": "Adriel Bergstrom", "email": "Viva.Haag@yahoo.com"},
+    {"name": "Mireille Erdman", "email": "Rosella51@gmail.com"},
+    {"name": "Mr. Rod Schuster", "email": "Alessandro_Pagac38@yahoo.com"},
+    {"name": "Antonina Herzog", "email": "Erna.Lebsack64@gmail.com"},
+    {"name": "Davon Bogan", "email": "Alvis_Rutherford@gmail.com"},
+    {"name": "Korey Hansen", "email": "Alysson.Weber42@hotmail.com"},
+    {"name": "Jazmyne Shanahan", "email": "Maximo.Cruickshank@yahoo.com"},
+    {"name": "Nick Jast", "email": "Annetta38@yahoo.com"},
+    {"name": "Ms. Isabel Considine", "email": "Celestine83@hotmail.com"},
+    {"name": "Domenick Murphy", "email": "Amelia56@yahoo.com"},
+    {"name": "Francisca Torp", "email": "Jayde63@yahoo.com"},
+    {"name": "Miss Ewell Hessel", "email": "Colton.Funk@gmail.com"},
+    {"name": "Juston Kuphal", "email": "Giuseppe82@gmail.com"},
+    {"name": "Garland Kerluke", "email": "Keven_Pfannerstill@yahoo.com"},
+    {"name": "Rickey Friesen", "email": "Joannie.Reinger76@yahoo.com"},
+    {"name": "Matteo Fadel", "email": "Laura_Torp@hotmail.com"},
+    {"name": "Dr. Jeramie Stracke", "email": "Miracle.Powlowski75@gmail.com"},
+    {"name": "Johnathan Jacobson", "email": "Bart24@hotmail.com"},
+    {"name": "Antonette Shields", "email": "Kurtis_Waters@yahoo.com"},
+    {"name": "David Goldner", "email": "Yadira.Kuhlman@gmail.com"},
+    {"name": "Geraldine Cummings", "email": "Ettie.Shanahan55@hotmail.com"},
+    {"name": "Colleen Nienow", "email": "Hermann.Torphy33@gmail.com"},
+    {"name": "Anita Fahey", "email": "Natalia.Reichert15@yahoo.com"},
+    {"name": "Terrance Johnston", "email": "Lonny_Mills@yahoo.com"},
+    {"name": "Miss Casper Hane", "email": "Carole_Schowalter3@gmail.com"},
+    {"name": "King Jakubowski", "email": "Enrico_Shields25@yahoo.com"},
+    {"name": "Felicity Kuhn", "email": "Neil_Langosh@gmail.com"}
+]
+
+function greeting(arr) {
+  for(let i = 0; i<arr.length; i++){
+    console.log(`Hello ${arr[i].name}`)
+  }
+}
+
+greeting(workers)
+
+
+//High order array methord
+// forEach, filter, map, reduce, push, pop, unshift, shift, etc
+
+
+
+const arr = [
+  {email: "Rosella.Hoeger@yahoo.com", name: "Kennedy Sauer", age: 23,},
+  {email: "Lina_Armstrong@yahoo.com", name: "Ubaldo Brekke", age: 29,},
+  {email: "Earlene_Gerlach@hotmail.com", name: "Imogene Dibbert", age: 34,},
+  {email: "Ludie.Wunsch1@hotmail.com", name: "Dedric Swift", age: 29,},
+  {email: "Braulio_Homenick@gmail.com",name: "Mr. Trace Kunde", age: 98,},
+  {email: "Jovany_Fahey@gmail.com", name: "Herta Wuckert", age: 300,},
+  {email: "Delbert.Carter75@yahoo.com", name: "Morris Krajcik", age: 58,},
+  {email: "Margarette83@yahoo.com", name: "Margaretta Mante", age: 98,},
+  {email: "Raegan_Ondricka@gmail.com", name: "Trystan Zemlak", age: 12,},
+  {email: "Abigale92@hotmail.com", name: "Yvonne Spinka", age: 17,},
+];
+
+arr.forEach((l) => {
+  if(l.age > 40){
+    console.log(l)
+  }
+})
+
+const filterArr =  arr.filter((el)=> {
+return el.age <40;
+})
+console.log(filterArr)
+
+
+
+  </script>
+</body>
+</html>
